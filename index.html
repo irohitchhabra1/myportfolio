@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="px-5-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+            </div>
+          </div>
+        </div>
+    </nav> -->
+
+    <header>
+      <h4>Portfolio <strong style="color: #de354c; font-size: 60px; line-height: 0; margin-left: -7px;">.</strong></h4>
+      <div id="ham-con" class="ham-container" onclick="myFunction(this)">
+          <div class="bar1" id="bar1"></div>
+          <div class="bar2" id="bar2"></div>
+          <div class="bar3" id="bar3"></div>
+      </div>
+  </header>
+
+    <section>
+        <!-- background -->
+        <div class="d-flex flex-wrap bg-transparent">
+            <div class="col-lg-8 col-md-8 col-sm12">
+              <div id="expandableCircle" class="circle animate__animated animate__flip">
+                <nav id="navBar">
+                  <ul>
+                    <li><a href="#work" onclick="closeNav(this)">Experience</a></li>
+                    <li><a href="#skill" onclick="closeNav(this)">Skillset</a></li>
+                    <li><a href="#project" onclick="closeNav(this)">Projects</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12"></div>
+        </div>
+        <!-- main hero section  -->
+        <div class="main">
+
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-6 col-sm-12 main__imgDiv">
+                    <img src="images/Rohit.png" alt="" class="animate__animated animate__fadeInUp" style="max-width:100%;">
+                </div>
+
+                <div class="col-lg-6 col-sm-12 px-2 my-auto main__textDiv d-flex flex-column justify-content-center">
+                    <h1 class="">I am Rohit, UI/UX Developer <span>Based in Toronto</span> </h1>
+                    <p class="">I am extremely proficient in Front-End Development using HTML5, Cascade Style Sheets (CSS3), Bootstrap, Javascript. And apart from Front-End, I have good knowledge in designing using Adobe Photoshop, Adobe Illustrator, Adobe XD, Sketch & Figma, and continuously engage in trying to extend my skills with new technology.</p>
+                 </div>
+            </div>
+        </div>
+        <!-- work experience  -->
+        <div class="container py-5">
+          <div  id="work" class="work py-4">
+            <div class="work__inner">
+              <p class="color__lightGrey mb-0"><strong><small>WORK EXPERIENCE</small></strong></p>
+              <h2 class="text-white col-lg-8 col-md-8 col-sm-12"><strong>Companies I have worked for in the past</strong></h2>
+              
+              
+              <div class="d-flex flex-wrap">
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <p class="work__number color__lightGrey pt-2">01</p>
+                  <p class="work__title color__cloudwhite col-lg-8 col-md-8 col-sm-12"><span style="color: #3cc74e;">Code Inc Solutions,</span> WordPress Developer</p>
+                  <p class="color__cloudwhite col-lg-7 col-md-7 col-sm-10">I am cureently the leading WordPress developer at Code Inc Solutiond. Code Inc Solutions ia a rising web development company founded by Harinder Singh who is one of the Top-Rated taletnt on Upwork</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <p class="work__number color__lightGrey pt-2">02</p>
+                  <p class="work__title color__cloudwhite col-lg-8 col-md-8 col-sm-12"><span style="color: #609bff;">Sunparison,</span> UX Developer</p>
+                  <p class="color__cloudwhite col-lg-7 col-md-7 col-sm-10">Sunparison is a US-based leading solar pannel manufacturer and installers in US. Read testimonial section to know what they asked about my work</p>
+                </div>
+                
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12">
+                  <p class="work__number color__lightGrey pt-2">03</p>
+                  <p class="work__title color__cloudwhite col-lg-8 col-md-8 col-sm-12"><span style="color: #e95e90;">Dribble,</span> Web Designer</p>
+                  <p class="color__cloudwhite col-lg-7 col-md-7 col-sm-10">I cureently the leading web designer at Google</p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- article  -->
+        <div class="article ">
+
+          <div class="d-flex flex-wrap">
+
+            <div class="article__textDiv px-5 py-5 col-lg-6 col-md-6 col-sm-12">
+              <div class="article__innerTextdiv">
+                <h2 class="col-lg-8 col-md-10 col-sm-12"><strong>Philosophy and Value</strong></h2>
+                <p class="col-lg-8 col-md-10 col-sm-12">I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
+                <a href="#">More about me</a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/article__img.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+        <!-- skillset section  -->
+        <div id="skill" class="skill py-5">
+          <div class="d-flex flex-wrap container">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+              <h2 class="color__cloudwhite"><strong>Skillset</strong></h2>
+              <p class="color__cloudwhite col-lg-6 col-md-10 col-sm-12">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
+            </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 d-flex flex-wrap">
+
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+              <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322f21d1916567_Product%20Design.svg" alt="">
+              <h3 class="color__cloudwhite pt-4 pb-2">UI - UX Developement</h3>
+              <p class="color__lightGrey col-lg-8 col-md-10 col-sm-12">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+              <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322f21d1916567_Product%20Design.svg" alt="">
+              <h3 class="color__cloudwhite pt-4 pb-2">Wordpress Development</h3>
+              <p class="color__lightGrey col-lg-8 col-md-10 col-sm-12">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+              <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322f21d1916567_Product%20Design.svg" alt="">
+              <h3 class="color__cloudwhite pt-4 pb-2">Branding</h3>
+              <p class="color__lightGrey col-lg-8 col-md-10 col-sm-12">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+              <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322f21d1916567_Product%20Design.svg" alt="">
+              <h3 class="color__cloudwhite pt-4 pb-2">Wordpress Theme Development</h3>
+              <p class="color__lightGrey col-lg-8 col-md-10 col-sm-12">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+            </div>
+
+          </div>
+          </div>
+        </div>
+        <!-- project section  -->
+        <div id="project" class="project py-5 container">
+          <div class="d-flex flex-wrap">
+            <div class="project__innerDiv col-lg-6 col-md-6 col-sm-12 p-2">
+              <h2 class="color__cloudwhite col-lg-10 col-md-12 col-sm-12"><strong>Work that I’ve done for the past 3 years</strong></h2>
+              <p class="color__lightGrey mb-5"><strong><small>My Projects</small></strong></p>
+
+              <div class="card mb-4">
+                <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322f6f6c91655b_Project%201.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-5">
+                  <h3 class="color__cloudwhite">Resturant Website Design</h3>
+                  <p class="card-text color__lightGrey mb-3">Some I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one. example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322ff406916555_Project%202.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-5">
+                  <h3 class="color__cloudwhite">Mobile Dashboard</h3>
+                  <p class="card-text color__lightGrey mb-3">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="project__innerDiv col-lg-6 col-md-6 col-sm-12 p-2">
+
+              <div class="card mb-4">
+                <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322f84ef916559_Project%203.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-5">
+                  <h3 class="color__cloudwhite">CoinView Mobile App Design</h3>
+                  <p class="card-text color__lightGrey mb-3">I was commissioned by Coinview to revamp their mobile app. I was asked to come up with a brand new design system and rethink the entire user expereince from the ground up.</p>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <img src="https://uploads-ssl.webflow.com/60670664a9322f4664916537/60670665a9322fc353916554_Project%204.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-5">
+                  <h3 class="color__cloudwhite">T-Box Mobile Design</h3>
+                  <p class="card-text color__lightGrey mb-3">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
+                </div>
+              </div>
+              <div class="project__buttonDiv">
+                <a href="#">VIEW ALL PROJECTS</a>
+              </div>
+
+            </div>
+            </div>
+        </div>
+        <!-- article 2 -->
+        <div class="article">
+
+          <div class="d-flex flex-wrap">
+
+            <div class="article__textDiv px-5 py-5 col-lg-6 col-md-6 col-sm-12">
+              <div class="article__innerTextdiv">
+                <h2 class="col-lg-8 col-md-10 col-sm-12"><strong>Instagram</strong></h2>
+                <p class="col-lg-8 col-md-10 col-sm-12">If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world</p>
+                <a href="#">More about me</a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/article2__img.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- contact section -->
+        <div class="contact">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-6">
+                <h2 class="color__cloudwhite">Let’s talk business</h2>
+                <p class="color__lightGrey col-8">Now that you know a lot about me, let me know if you are interested to work with me.
+
+                  Name
+                  </p>
+              </div>
+              <div class="col-6">
+                <form onsubmit="return false">
+                  <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label color__cloudwhite">Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <small><span id="name-error" class="text-danger"></span></small>
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label color__cloudwhite">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small><span id="email-error" class="text-danger"></span></small>
+                  </div>
+                  
+                  <div class="form-group mb-4">
+                    <label for="exampleFormControlTextarea1" class="color__cloudwhite mb-2">Message</label>
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <small><span id="message-error" class="text-danger"></span></small>
+                  </div>
+                  <button type="submit" class="custom-btn btn btn-primary" id="form-submit">Let's Get Started</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
+</html>
